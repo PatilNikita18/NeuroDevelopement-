@@ -1,5 +1,5 @@
 
-# 🌟 WonderLearn – AI-Powered Personalized Learning Platform
+# 🌟 WonderLearn – AI-Powered Personalized Learning Platform for children with neurodevelopement disorder
 
 <p align="center">
   <img src="assets/logo.png" alt="WonderLearn Logo" width="180"/>
