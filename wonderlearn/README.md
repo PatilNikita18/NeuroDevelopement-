@@ -1,93 +1,341 @@
-# WonderLearn ✨
 
-**AI-Powered Personalized Learning Platform** — a polished frontend prototype
-for a children's learning app (ages 5–18) supporting Intellectual Disability
-(ID), Down Syndrome (DS), and ADHD learning profiles.
+# 🌟 WonderLearn – AI-Powered Personalized Learning Platform
 
-This is an **educational support tool, not a diagnostic or medical
-application.**
+<p align="center">
+  <img src="assets/logo.png" alt="WonderLearn Logo" width="180"/>
+</p>
 
-## Quick start
+<p align="center">
+  <b>Making Learning Fun, Interactive, Inclusive, and Personalized!</b>
+</p>
+
+---
+
+## 📌 About the Project
+
+WonderLearn is an AI-powered personalized learning platform designed for children with neurodevelopmental disorders, including Autism Spectrum Disorder (ASD), Attention Deficit Hyperactivity Disorder (ADHD), and Intellectual Disabilities (ID).
+
+The platform provides an engaging and adaptive learning environment through interactive games, educational videos, stories, puzzles, and creative activities.
+
+It uses pre-assessment results to understand children's learning abilities, identify their strengths and weaker areas, and recommend suitable learning content based on their age, interests, abilities, and learning preferences.
+
+## 🎯 Problem Statement
+
+Children with neurodevelopmental disorders often face difficulties with traditional learning methods because every child has different learning abilities, attention levels, interests, and educational needs.
+
+Existing learning platforms may not provide sufficient personalization or interactive experiences for these children.
+
+## 💡 Proposed Solution
+
+WonderLearn provides a personalized digital learning environment that:
+
+- Identifies learning strengths and improvement areas through pre-assessment.
+- Recommends suitable learning activities based on assessment results.
+- Provides interactive and engaging educational content.
+- Supports different age groups and learning levels.
+- Tracks learning progress and performance.
+- Offers a child-friendly interface with accessibility features.
+
+## ✨ Key Features
+
+### 1. User Authentication
+- Secure user registration and login.
+- User authentication and session management using Clerk.
+- Personalized user dashboard.
+
+### 2. Pre-Assessment Module
+- Evaluates children's learning abilities.
+- Identifies strengths and weaker learning areas.
+- Analyzes assessment responses.
+- Generates a personalized learning profile.
+- Creates recommendations based on assessment performance.
+
+### 3. Personalized Learning Recommendations
+- Identifies priority learning areas.
+- Recommends suitable educational modules.
+- Uses a scoring and ranking algorithm to prioritize learning content.
+- Provides personalized learning missions.
+
+### 4. Interactive Learning Modules
+
+| Module | Description |
+|---|---|
+| 📚 Learning | Educational lessons and activities |
+| 🎮 Games | Interactive educational games |
+| 🎬 Videos | Categorized educational videos |
+| 😊 Mood | Mood-related activities |
+| 🎨 Create | Creative learning activities |
+| 💚 Care | Well-being and supportive activities |
+| 📊 Progress | Learning performance and progress tracking |
+
+### 5. Video Learning
+- Educational videos organized by categories.
+- ABC, Animals, Emotions, Stories, Daily Living, Music, Science, Communication, Safety, and more.
+- Video favorites and completion tracking.
+- Calm Mode support.
+
+### 6. Progress Tracking
+- Tracks completed learning activities.
+- Displays learning accuracy and performance.
+- Monitors learning streaks and achievements.
+- Shows individual learning progress.
+
+### 7. Accessibility Features
+- Big Text mode.
+- Calm Mode.
+- Text-to-speech support using browser speech synthesis.
+- Simple and child-friendly navigation.
+- Engaging visual elements.
+
+## 🧠 Personalization Algorithm
+
+WonderLearn uses a pre-assessment-based personalization approach.
+
+**Working Process:**
+
+1. Collect assessment responses.
+2. Analyze the child's performance.
+3. Identify strengths and weaker learning areas.
+4. Calculate priority scores for learning topics.
+5. Sort and rank learning modules based on priority.
+6. Recommend the most relevant activities.
+7. Track progress and update recommendations when new assessment information is available.
+
+### Algorithm Used
+
+**Sorting and Ranking Algorithm**
+
+The system prioritizes learning modules according to their calculated relevance and learning priority scores.
+
+Modules with higher priority are displayed first, helping children focus on areas where additional practice may be beneficial.
+
+## 👥 Target Users
+
+- Children aged 5–8 years.
+- Children aged 9–12 years.
+- Teenagers aged 13–18 years.
+- Children with Autism, ADHD, and Intellectual Disabilities.
+- Parents, caregivers, and educators.
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| React.js / TypeScript | Frontend development |
+| Node.js | Backend runtime |
+| Express.js | Backend framework and APIs |
+| MongoDB | Database |
+| Clerk | Authentication and user management |
+| JavaScript / TypeScript | Application logic |
+| HTML5 / CSS3 | UI development |
+| Git & GitHub | Version control |
+| Browser Speech Synthesis | Text-to-speech functionality |
+
+*Adjust the frontend entry if your actual implementation uses Next.js.*
+
+## 🏗️ System Workflow
+
+```text
+        User Registration / Login
+                  |
+                  v
+           User Dashboard
+                  |
+                  v
+          Pre-Assessment
+                  |
+                  v
+       Analyze Assessment Results
+                  |
+                  v
+       Identify Learning Weak Areas
+                  |
+                  v
+       Calculate Priority Scores
+                  |
+                  v
+       Sort and Rank Learning Modules
+                  |
+                  v
+       Personalized Learning Plan
+                  |
+                  v
+       Interactive Learning Activities
+                  |
+                  v
+          Progress Tracking
+```
+
+## 📸 Application Screenshots
+
+Screenshots help visitors understand how WonderLearn works.
+
+### 1. Login and Registration
+
+![Login Page](assets/login.png)
+
+### 2. Dashboard
+
+![Dashboard](assets/dashboard.png)
+
+### 3. Pre-Assessment
+
+![Pre-Assessment](assets/pre-assessment.png)
+
+### 4. Personalized Learning Plan
+
+![Personalized Learning](assets/personalized-learning.png)
+
+### 5. Interactive Learning Modules
+
+![Learning Modules](assets/learning-modules.png)
+
+### 6. Educational Videos
+
+![Video Learning](assets/videos.png)
+
+### 7. Games and Activities
+
+![Games](assets/games.png)
+
+### 8. Progress Tracking
+
+![Progress Tracking](assets/progress.png)
+
+> Replace these image paths with your actual application screenshots.
+
+## 📂 Project Structure
+
+```text
+WonderLearn/
+│
+├── frontend/
+│   ├── components/
+│   ├── app/
+│   ├── pages/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   └── package.json
+│
+├── assets/
+│   ├── logo.png
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── pre-assessment.png
+│   ├── personalized-learning.png
+│   ├── learning-modules.png
+│   ├── videos.png
+│   ├── games.png
+│   └── progress.png
+│
+├── .gitignore
+└── README.md
+```
+
+*This is a suggested structure. Update it to match your actual folders and filenames.*
+
+## ⚙️ Installation and Setup
+
+### Prerequisites
+
+- Node.js
+- npm
+- MongoDB
+- Git
+- Clerk account
+
+### Step 1: Clone the Repository
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/WonderLearn.git
+cd WonderLearn
+```
+
+### Step 2: Install Frontend Dependencies
+
+```bash
+cd frontend
 npm install
+```
+
+### Step 3: Install Backend Dependencies
+
+```bash
+cd ../backend
+npm install
+```
+
+### Step 4: Configure Environment Variables
+
+Create `.env` files in the appropriate frontend and backend directories.
+
+Example configuration:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+CLERK_SECRET_KEY=your_clerk_secret_key
+```
+
+Add other environment variables required by your application.
+
+**Important:** Never upload actual API keys, secret keys, or database credentials to GitHub.
+
+### Step 5: Start the Application
+
+Start the backend:
+
+```bash
+cd backend
 npm run dev
 ```
 
-Then open the printed local URL. The whole app is navigable with mock data —
-no backend required.
+Start the frontend in another terminal:
 
 ```bash
-npm run build     # production build → dist/
-npm run preview   # preview the production build
+cd frontend
+npm run dev
 ```
 
-## What's inside
+Open the local URL displayed in your frontend terminal.
 
-- **React 19 + TypeScript + Vite** with the `@` path alias pointing at `src/`
-- **Tailwind CSS v4** — theme tokens (Wonder Garden palette, Fredoka/Plus
-  Jakarta Sans type) live in `src/index.css` under `@theme`
-- **Framer Motion** for page transitions, hover/tap micro-interactions, and
-  ambient background motion (clouds, stars, butterflies) — respects
-  `prefers-reduced-motion`
-- **Phaser.js** — a reusable mini-game container (`components/game/PhaserGameContainer.tsx`)
-  used on the Activity screen; swap in real game logic per `gameType` later
-- **Recharts** — weekly progress chart on the Progress page
-- **Zustand** — `stores/` (auth, child profile, learning session,
-  accessibility, gamification)
-- **TanStack Query** — `services/queries.ts` for activities, worlds,
-  progress, achievements, AI recommendations
-- **React Router** — all routes from the brief are wired in `App.tsx`
+*Check your package.json scripts and adjust the commands if necessary.*
 
-## Project structure
+## 🚀 Future Scope
 
-```
-src/
-├── components/
-│   ├── backgrounds/   # CloudBackground (auth/universe), GardenBackground (main app)
-│   ├── game/          # PhaserGameContainer
-│   ├── layout/         # AppShell, Navigation, AccessibilityBar
-│   └── ui/             # Button, Card, ProgressBar, Avatar, Badge, Stepper,
-│                        # Modal, AudioButton, HintButton, *Card components
-├── pages/
-│   ├── auth/            # Login, Register (5-step wizard)
-│   ├── onboarding/       # Welcome (Lumi the guide)
-│   ├── dashboard/        # Dashboard, Achievements
-│   ├── learning/         # Subjects, WorldDetail, Activity
-│   ├── progress/         # Progress
-│   └── profile/          # Profile, Settings
-├── stores/              # Zustand stores
-├── services/            # aiService.ts (mock AI contract), queries.ts (TanStack Query)
-├── lib/                 # mockData.ts, cn.ts
-└── types/                # shared domain types
+- Advanced AI-based learning recommendations.
+- More personalized educational games.
+- Parent and educator dashboards.
+- Detailed learning analytics.
+- Multilingual learning support.
+- Additional accessibility features.
+- Improved adaptive learning based on continuous performance.
 
-server/        # Express + TypeScript + MongoDB/Mongoose scaffold (not implemented)
-ai-service/    # FastAPI + BKT/scikit-learn/PyTorch scaffold (not implemented)
-```
+## 🌍 Project Impact
 
-## Connecting the real backend later
+WonderLearn aims to make digital education more inclusive by providing children with different learning needs an engaging, supportive, and personalized learning experience.
 
-The frontend already calls a stable service contract:
+It focuses on improving accessibility, encouraging participation, and helping children learn at their own pace.
 
-- `src/services/aiService.ts` — swap the mock bodies for real `fetch` calls to
-  `GET /api/ai/recommendation`, `GET /api/ai/next-activity`,
-  `POST /api/ai/analyze-performance`, `GET /api/ai/mastery`, etc.
-- `src/services/queries.ts` — swap the mock data with real REST calls; the
-  TanStack Query cache keys are already in place.
-- `server/` mirrors the Node/Express/Mongo structure the app expects
-  (`Child`, `LearningProfile`, `Attempt` Mongoose schemas included).
-- `ai-service/` mirrors the FastAPI structure for the ML/BKT service.
+## 👩‍💻 Developer
 
-## Product principle baked into the data model
+**Nikita Patil**
 
-Condition (ID / DS / ADHD) only sets an **initial support configuration** —
-never a fixed ability ceiling. Difficulty and pacing are meant to move based
-on observed performance (see `AttemptResult` in `src/types/index.ts` and the
-adaptive UI states on the Activity screen).
+B.Tech – Information Technology
 
-## Accessibility
+SVKM's NMIMS, Dhule
 
-- Reduced-motion respected globally (`prefers-reduced-motion`)
-- Visible focus rings, semantic HTML, ARIA labels on interactive elements
-- In-app accessibility panel (bottom-right ♿ button): read-aloud, text size,
-  contrast, animation toggle, sound toggle, reduce-distractions
+## 📄 License
+
+This project is developed for academic and educational purposes.
+
+---
+
+<p align="center">
+  <b>🌟 WonderLearn – Every Child Can Learn, Every Child Can Grow! 🌟</b>
+</p>
