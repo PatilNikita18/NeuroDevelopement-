@@ -1,0 +1,295 @@
+
+.cartoon-buddy {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.buddy-speech-bubble {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  padding: 20px 16px;
+  border: 3px solid #d8ccff;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(91, 69, 170, 0.12);
+  box-sizing: border-box;
+}
+
+.buddy-speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-right: 3px solid #d8ccff;
+  border-bottom: 3px solid #d8ccff;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.buddy-speech-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #7355cb;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.buddy-speech-bubble p {
+  margin: 0;
+  color: #292344;
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.buddy-character-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 220px;
+  height: 220px;
+  padding: 0;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #eee7ff, #d8edff);
+  box-shadow:
+    0 12px 0 #c9b7ff,
+    0 18px 35px rgba(88, 66, 160, 0.18);
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.buddy-character-button:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 0 #c9b7ff,
+    0 23px 38px rgba(88, 66, 160, 0.2);
+}
+
+.buddy-character-button:active {
+  transform: translateY(3px);
+}
+
+.buddy-character-button:focus-visible,
+.buddy-help-button:focus-visible {
+  outline: 4px solid #6941c6;
+  outline-offset: 5px;
+}
+
+.buddy-character {
+  display: block;
+  font-size: 145px;
+  line-height: 1;
+  user-select: none;
+}
+
+.buddy-sparkle {
+  position: absolute;
+  font-size: 30px;
+  pointer-events: none;
+}
+
+.sparkle-one {
+  top: 0;
+  left: 8px;
+}
+
+.sparkle-two {
+  right: 0;
+  bottom: 12px;
+}
+
+.buddy-name {
+  color: #45327f;
+  font-size: 23px;
+  font-weight: 850;
+}
+
+.buddy-help-button {
+  width: 100%;
+  max-width: 230px;
+  padding: 15px 12px;
+  border: 2px solid #d9ccff;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #5636a5;
+  font-size: 17px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+
+.buddy-help-button:hover {
+  background: #f2edff;
+}
+
+.cartoon-buddy--left .buddy-character-button {
+  background: linear-gradient(145deg, #fff1d6, #ffe0ec);
+  box-shadow:
+    0 12px 0 #ffc9dc,
+    0 18px 35px rgba(88, 66, 160, 0.18);
+}
+
+.cartoon-buddy--left .buddy-character-button:hover {
+  box-shadow:
+    0 16px 0 #ffc9dc,
+    0 23px 38px rgba(88, 66, 160, 0.2);
+}
+
+.cartoon-buddy--left .buddy-speech-bubble {
+  border-color: #ffd4e4;
+}
+
+.cartoon-buddy--left .buddy-speech-label {
+  color: #bd4f83;
+}
+
+.cartoon-buddy--left .buddy-help-button {
+  border-color: #ffd4e4;
+  color: #a43d70;
+}
+
+.cartoon-buddy--left .buddy-help-button:hover {
+  background: #fff0f6;
+}
+
+.cartoon-buddy--right .buddy-character-button {
+  background: linear-gradient(145deg, #d9fff2, #dceaff);
+  box-shadow:
+    0 12px 0 #b4e8db,
+    0 18px 35px rgba(88, 66, 160, 0.18);
+}
+
+.cartoon-buddy--right .buddy-character-button:hover {
+  box-shadow:
+    0 16px 0 #b4e8db,
+    0 23px 38px rgba(88, 66, 160, 0.2);
+}
+
+.cartoon-buddy--right .buddy-speech-bubble {
+  border-color: #bcefe3;
+}
+
+.cartoon-buddy--right .buddy-speech-label {
+  color: #168b76;
+}
+
+.cartoon-buddy--right .buddy-help-button {
+  border-color: #bcefe3;
+  color: #147a69;
+}
+
+.cartoon-buddy--right .buddy-help-button:hover {
+  background: #edfff9;
+}
+
+/* Desktop: large characters on both sides */
+@media (min-width: 1200px) {
+  .cartoon-buddy {
+    gap: 24px;
+  }
+
+  .buddy-character-button {
+    width: 240px;
+    height: 240px;
+  }
+
+  .buddy-character {
+    font-size: 160px;
+  }
+}
+
+/* Laptop screens */
+@media (max-width: 1199px) {
+  .buddy-character-button {
+    width: 165px;
+    height: 165px;
+  }
+
+  .buddy-character {
+    font-size: 110px;
+  }
+
+  .buddy-speech-bubble p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet and mobile */
+@media (max-width: 760px) {
+  .cartoon-buddy {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .buddy-character-button {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+    box-shadow: 0 5px 0 #c9b7ff;
+  }
+
+  .buddy-character {
+    font-size: 65px;
+  }
+
+  .buddy-sparkle {
+    font-size: 19px;
+  }
+
+  .buddy-speech-bubble {
+    max-width: 260px;
+    padding: 12px 10px;
+    border-width: 2px;
+  }
+
+  .buddy-speech-label {
+    font-size: 11px;
+  }
+
+  .buddy-speech-bubble p {
+    font-size: 13px;
+  }
+
+  .buddy-name {
+    font-size: 16px;
+  }
+
+  .buddy-help-button {
+    width: auto;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .buddy-character-button {
+    width: 76px;
+    height: 76px;
+  }
+
+  .buddy-character {
+    font-size: 49px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buddy-character-button,
+  .buddy-help-button {
+    transition: none;
+  }
+}

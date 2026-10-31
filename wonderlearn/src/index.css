@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Wonder Garden palette ---- */
+  --color-cream: #FBF7EF;
+  --color-lavender: #F0ECFB;
+  --color-skyhaze: #E9F4FC;
+  --color-mintwash: #EBF7EF;
+
+  --color-purple-50: #F3F0FC;
+  --color-purple-100: #E4DCF8;
+  --color-purple-300: #B4A3EA;
+  --color-purple-500: #8B7BDB;
+  --color-purple-600: #7360C9;
+  --color-purple-700: #5B49A6;
+
+  --color-sky-100: #DCEEFB;
+  --color-sky-300: #93CBF0;
+  --color-sky-500: #57A9E4;
+  --color-sky-700: #2E7FBE;
+
+  --color-mint-100: #DAF3E6;
+  --color-mint-300: #93DFB9;
+  --color-mint-500: #4BC591;
+  --color-mint-700: #2E9C71;
+
+  --color-sun-100: #FDF0CE;
+  --color-sun-300: #FBD877;
+  --color-sun-500: #F5B932;
+  --color-sun-700: #D6931A;
+
+  --color-coral-100: #FDE3E6;
+  --color-coral-300: #F9AAB6;
+  --color-coral-500: #F17E90;
+  --color-coral-700: #D95A70;
+
+  --color-ink-900: #2B2540;
+  --color-ink-700: #4A4360;
+  --color-ink-500: #746C8C;
+  --color-ink-300: #ACA5C2;
+
+  /* ---- Universe / auth palette ---- */
+  --color-nightsky-900: #14113A;
+  --color-nightsky-800: #1D1854;
+  --color-nightsky-700: #2A2270;
+  --color-nightsky-500: #4A3B9E;
+  --color-nightsky-300: #8B7FD1;
+  --color-starlight: #FDF0CE;
+
+  --font-display: "Fredoka", "Plus Jakarta Sans", ui-rounded, sans-serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 10px 30px -12px rgba(75, 60, 130, 0.18);
+  --shadow-softer: 0 4px 16px -4px rgba(75, 60, 130, 0.12);
+  --shadow-glow-purple: 0 0 0 4px rgba(139,123,219,0.25), 0 8px 24px -8px rgba(139,123,219,0.5);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink-900);
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-purple-500);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility: hide scrollbar for chip rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
