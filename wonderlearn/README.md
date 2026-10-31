@@ -200,7 +200,8 @@ Screenshots help visitors understand how WonderLearn works.
 
 ### 8. Progress Tracking
 
-![Progress Tracking](assets/progress.png)
+![Uploading image.png…]()
+
 
 > Replace these image paths with your actual application screenshots.
 
