@@ -173,7 +173,7 @@ Screenshots help visitors understand how WonderLearn works.
 ### 1. Login and Registration
 
 <p align="center">
-  <img src="assets/dashboard.png" width="800" alt="WonderLearn Dashboard"/>
+  <img src="assets/login.png" width="800" alt="WonderLearn Dashboard"/>
 </p>
 
 ### 2. Dashboard
